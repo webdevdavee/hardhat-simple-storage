@@ -1,0 +1,27 @@
+// Deploy contract
+npx hardhat ignition deploy ./ignition/modules/SimpleStorage.js --network sepolia
+npx hardhat deploy-and-verify --network sepolia // With custom script
+
+// verify
+npx hardhat verify --network sepolia <DEPLOYED_CONTRACT_ADDRESS>
+
+// Compile
+npx hardhat compile
+
+// Run scripts
+ npx hardhat run scripts/deploy-verify.ts --network localhost
+
+// Clear cache
+npx hardhat clean
+
+// Hardhat node
+npx hardhat node
+
+// Working with the console on different networks (quickly get values of a function, variable or property)
+npx hardhat console --network <PLACE_NETWORK>
+
+// Run test
+npx hardhat test
+
+// Run solidity coverage
+npx hardhat coverage
